@@ -4,7 +4,7 @@ validate the XML before giving it to this program.
 
 **Author: Carl Kenny**
 
-**Usage: Python dfa_parser_CK.py yourDFA.jff **
+**Usage: Python dfa_parser_CK.py yourDFA.jff**
 
 
 A more in depth explanation can be found here: http://carlkenny.wordpress.com/
