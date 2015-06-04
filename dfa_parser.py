@@ -72,7 +72,6 @@ def formatOutput(tranisitionTable):
     return transitionTable 
 
 if __name__ == '__main__':
-    # TODO: Shift this into formatOuput(), fix this digusting format hacking
     xmlFile = sys.argv[1] 
     tree, root, transitionTable = parseXML(xmlFile)
     finalStates = findInitialAndFinal(tree, root, transitionTable)
@@ -82,12 +81,8 @@ if __name__ == '__main__':
     quizPrintout = []
     for key, value in sorted(output.iteritems(), key=operator.itemgetter(0)): 
         quizPrintout.append([key, value])
-        #for item in value:
-            #quizPrintout.append([item[0]])
 
-    # Convert list of strs -> list of ints
-    # quizPrintout = list(map(int, quizPrintout))
-
+    # TODO: Convert list of strs -> list of ints
     quizPrintout.append(finalStates)
     print(quizPrintout)
     
